@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.database">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Movies"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".HomePage" />
+
+            <activity android:name=".LoginQuery"
+                android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MeetingPage">
+        </activity>
+        <activity android:name=".MaterialPage">
+        </activity>
+        <activity android:name=".MemberPage">
+        </activity>
+        <activity android:name=".UpdatePage">
+        </activity>
+        <activity android:name=".ManageMeetingsPage">
+        </activity>
+    </application>
+
+</manifest>
